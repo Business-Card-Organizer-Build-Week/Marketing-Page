@@ -1,79 +1,56 @@
 <!DOCTYPE html>
-<html lang= "en">
+<html>
     <head>
-        <!-- Telling browser to use that character coding to convert to machine-readable code -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Business Card Organizer</title> 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="style" href="css/img-holder.css">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+        <link href="css/index.css" rel="stylesheet" />
+        <script src="js/index.js" defer></script>
+        <title>Business Card Organizer</title>
     </head>
 
-    <body data-spy="scroll" data-target="#navRespond">
-        <!-- LANDING -->
-        <div id="landing">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                <a class="name" href="#">Business Card Organizer</a>
+    <body>
+        <!-- START NAV AND TOGGLE OPEN -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Business Card Organizer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- opening the hamburglr -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navRespond">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- collapsing the hanburgler -->
-                <div class="collapse navbar-collapse" id="navRespond">
-                    <ul class="navbar-nav m1-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#landing">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"features>Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#connect">Connect</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="team.html">Team</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-        </div>
-        <!-- END -->
-
-        <!-- ABOUT -->
-        <div id="about" class="space">
-
-        </div>
-        <!-- END -->
-
-        <!-- FEATURES -->
-        <div id="features" class="space">
-
-        </div>
-        <!-- END -->
-
-        <!-- CONNECT -->
-        <div id="connect" class="space">
-
-        </div>
-        <!-- END -->
-
-        <!-- TEAM -->
-        <div id="team" class="space">
-
-        </div>
-        <!-- END -->
-     
-        <!-- BS required to link JQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+            <!-- COLLAPSE TOGGLE -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Connect
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Login</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href=" mailto:noOne@nonexistant.com?subject=This is working!">Contact Us</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- NAV ENDED -->
+        
     </body>
+
 </html>
