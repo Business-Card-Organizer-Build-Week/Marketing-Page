@@ -1,1 +1,27 @@
 // NAV BAR
+.navbar {
+    min-height: 80px;
+    background: @main-text;
+
+    .navbar-brand{
+        font-size: 2.4rem;
+        font-family: 'Anton', sans-serif;
+        color: @nav-color;
+    }
+
+    .nav-link{
+       .navlink-style();
+    }
+
+    .dropdown-menu.show{
+        background: #678298;
+    }
+    
+    .dropdown-item{
+        .navlink-style();
+        background: #678298;
+        padding: 10px 30px;
+        text-align: center;
+    }
+}
+

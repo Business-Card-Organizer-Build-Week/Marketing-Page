@@ -4,15 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Serif&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet" />
     <title>Business Card Organizer</title>
 </head>
 <body>
-    <header id="showcase">
+
+<!-- START NAV AND TOGGLE OPEN -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <!-- brand -->
+        <a class="navbar-brand" href="landing.html">Business Card Organizer</a>
+
+        <!-- collpase button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- COLLAPSE TOGGLE -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                    Connect
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Login</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href=" mailto:noOne@nonexistant.com?subject=This is working!">Contact Us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!-- NAV END -->
+
+    <header id="landing-page">
         <h1>Business Card Organizer</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos, illum sint mollitia tempora soluta?</p> 
         <a href="index.html" class="button">Learn More</a>
     </header>
+    
 </body>
 </html>
