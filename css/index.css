@@ -1,3 +1,7 @@
+.landing-content {
+  color: #383836;
+  font-size: 2rem;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -302,4 +306,53 @@ template {
    */
 [hidden] {
   display: none;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.7rem;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+h2,
+h3 {
+  font-family: 'PT Serif', serif;
+}
+#showcase {
+  background-image: url('../img/landing-img_1920x1280.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+#showcase h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  color: #383836;
+}
+#showcase p {
+  color: #383836;
+  font-size: 2rem;
+}
+#showcase .button {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #383836;
+  border: #383836 2px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+#showcase .button:hover {
+  background: #383836;
+  color: #fff;
 }
