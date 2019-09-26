@@ -120,20 +120,10 @@
           text-align: center;
           position: relative;
         }
-
-        .team-heading::after{
-          content: "";
-          width: 10rem;
-          height: .8rem;
-          background-color: @team-color;
-          position: absolute;
-          bottom: -2rem;
-          left: 50%;
-          transform: translateX(-50%);
-          border-radius: 2rem;
-        }
     }
 }
+
+
 
 // Cards
 .tcard-wrapper{
@@ -144,13 +134,13 @@
 
     .team-card{
       // changed to 25 to make card smaller
-      width: 32rem;
+      width: 30rem;
       background-color: @light-bg;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin: 2rem 0;
+      margin: 2rem;
       box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
 
         .tcard-img{
@@ -158,8 +148,8 @@
           width: 100%;
           height: 26rem;
           object-fit: cover;
-          -webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+          -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 35%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 35%);
         }
 
         .profile-img{
@@ -167,9 +157,96 @@
           height: 15rem;
           object-fit: cover;
           border-radius: 50%;
-          margin-top: -11rem;
+          margin-top: -15rem;
           z-index: 999;
           border: 1rem solid @light-bg;
         }
+
+        h1{
+          font-size: 2.5rem;
+          margin: 1.5rem 0;
+          padding: 0;
+        }
+
+        .job-title{
+          color:#949EA7;
+          font-size: 1.5rem;
+          font-weight: 300;
+        }
+
+        .card-about{
+          font-size: 1.5rem;
+          margin: 1.5rem 0;
+          font-style: italic;
+          text-align: center; 
+        }
+
+        .btn{
+          padding: 1rem 2.5rem;
+          background-color: #264561;
+          border-radius: 2rem;
+          margin: 1rem 0;
+          text-transform: uppercase;
+          color: #D3CFD3;
+          font-size: 1.4rem;
+          transition: all .5s;
+        }
+        .btn:hover{
+          transform: translateY(-2px);
+          box-shadow: .5rem .5rem 2rem rgba(0,0,0,.2)
+        }
+        .btn:active{
+          transform: translateY(0);
+          box-shadow: none;
+        }
+
+        .media{
+          width: 100%;
+          list-style: none;
+          display: flex;
+          justify-content: space-evenly;
+          padding: 2rem 0;
+          margin-top: 1.5rem;
+          border-top: 1px solid rgba(0,0,0,.1);
+
+            i {
+              font-size: 3rem;
+              transition: color .5s;
+            }
+        }
+    }
+}
+
+// icons
+.fa-linkedin{
+  color: #0077B5;
+}
+.fa-twitter-square{
+  color: #55acee;
+}
+.fa-google-plus-square{
+  color: #dd4b39;
+}
+
+.fa-linkedin:hover, 
+.fa-twitter-square:hover, 
+.fa-google-plus-square:hover, 
+.fa-github-square:hover{
+  color: #E2774E;
+}
+
+
+@media @lg-screen{
+    .tcard-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .team-card{
+      margin: 2rem 5rem;
+      
     }
 }
