@@ -1,89 +1,93 @@
-// Navbar
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    
-    .brand-title{
-        font-size: 1.5rem;
-        margin: .5rem;
+/* About */
+#about {
+    .combo();
+    padding-bottom: 2em;
+  
+    .content-wrap {
+      padding: 0 1.5em;
     }
+}
 
-    .navbar-links ul{
+/* Features */
+  #features {
+    padding: 2em 1em 1em;
+      
+    ul {
+        list-style: none;
         margin: 0;
         padding: 0;
-        display: flex;
 
-    }
-
-    .navbar-links li{
-        list-style: none;
-
-        a{
-            text-decoration: none;
-            color: #fff;
-            padding: 1rem;
-            display: block;
-
-            @media @nav-small{
-                padding: .5rem 1rem;
-            }
-        }
-    }
-
-    .navbar-links li:hover {
-        background-color: #555;
-    }
-
-    .toggle-button {
-        position: absolute;
-        top: .75rem;
-        right: 1rem;
-        display: none;;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 21px;
-
-            .bar {
-                height: 3px;
-                width: 100%;
-                background-color: #fff;
-                border-radius: 10px;
-
-            }
-
-        @media @nav-small{
-            display: flex;
-        }
-    }
+          li {
+            margin-bottom: 1em;
+            .combo();
+          }
+      }
+  }
+  
+/* Info*/
+#info{
+  .combo();
+  padding-bottom: 2em;
 }
-
-// NAV MEDIA QUERIES
-@media @nav-small{
-    .navbar-links{
-        display: none;
-        width:100%;
+  
+  /* Team/Connect */
+  
+  #team-connect {
+    .box {
+    padding: 2em;
+    color: #fff;
+    }
+    .box:first-child {
+      background: @team-color;
     }
 
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
+    .act-btn{
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      padding: 1em 2em;
+      border: 1px solid #666;
+      margin: 0.5em 0;
     }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
+    .act-btn:hover {
+      background: #eaeaea;
+      color: #333;
     }
-
-    .navbar-links li {
-        text-align: center;
-    }
-
-    .navbar-links.active{
-        display: flex;
-    }
+} 
+// couldnt override body inheritence
+.network {
+  background:@connect-color !important;
 }
+  
+  /* Media Queries */
+ @media @lg-screen{
+  //  Team/Connect
+    .lower-wrap {
+      margin: 15px;
+      background-color:@connect-color;
+    }
 
+    .lower-row {
+      .row();
+      width: 100%;
+    }
+    .box {
+      .column();
+    }
+
+    .card-wrap{
+      margin: 15px;
+      background-color: red;
+    }
+
+    .card-row{
+      .row();
+      width: 100%;
+    }
+
+    card{
+      .column();
+    }
+
+ }

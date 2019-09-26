@@ -1,122 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Met Tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Script and Style Tags -->
-        <link rel="stylesheet" href="css/index.css">
-        <script src="js/index.js" defer></script>
-        <title>Business Card Organizer</title>
-    </head>
-    <body>
-        <!-- Nav Bar -->
-        <div id="navbar">
-            <nav class="navbar">
-                <div class="brand-title">Business Card Organizer</div>
-                <!-- Hamburger -->
-                <a href="#" class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </a>
-                <div class="navbar-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="#">Connect</a></li>
-                    </ul>
-                </div>
-            </nav>
+  <head>
+      <!-- Meta Tags -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- Style -->
+      <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./css/index.css">
+      <title>Business Card Organizer</title>
+  </head>
+  <body>
+      
+<!-- Navigation -->
+    <nav class="navbar">
+      <a href="" class="logo">Card Organizer</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="#" class="nav-link">Connect</a></li>
+      </ul>
+    </nav>
+
+    <!--Home -->
+    <header id="home">
+      <div class="bg-image"></div>
+      <div class="content-wrap">
+        <h1>A Digital Card Organizer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum nisi laboriosam eos saepe asperiores dolorum.</p>
+        <a href="#features" class="btn">Tell Me More</a>
+      </div>
+    </header>
+      
+    <!-- Content -->
+    <main id="main">
+      <!--  About  -->
+      <section id="about">
+        <div class="content-wrap">
+          <h2 class="content-title">Create and Share with Business Partners</h2>
+          <div class="content-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequi animi totam, accusantium, ex eius quia, natus quo?</p>
+          </div>
         </div>
-
-        <!-- Home -->
-        <header id="home" class="grid">
-            <div class="bg-image"></div>
-            <h1>Business Card Organizer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptatibus quaerat! Tempora dolore similique laboriosam assumenda vitae explicabo rem atque?</p>
-            <a href="#features" class="btn">Tell Me More</a>
-        </header>
-
-        <!-- Content -->
-        <main id="main">
-
-            <!-- About Section -->
-            <section id="about" class="grid">
-                <div class="con-contain">
-                    <h2 class="content-title">Create and Share with Business Partners</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum debitis unde, aperiam eum ab nam asperiores! Animi ut excepturi esse et similique repellendus qui perspiciatis perferendis veritatis eos aliquam quae repellat voluptate aliquid maiores quibusdam delectus facilis, quia nesciunt rem.</p>
-                </div>
-            </section>
-
-            <!-- Features Section -->
-            <section id="features" class="grid">
-                <ul>
-                    <!-- Card Creation -->
-                    <li>
-                        <div class="features-card">
-                            <img src="./img/create-card.jpg" alt="hand goldinf a business card and phone">
-                            <div class="card-content"></div>
-                            <h3 class="card-content">Create Personalized Card</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit modi ipsum, ex praesentium qui distinctio.</p>
-                        </div>
-                    </li>
-
-                    <!-- Save Cards -->
-                    <li>
-                        <div class="features-card">
-                            <img src="./img/event-info.jpg" alt="group of people talking">
-                            <div class="card-content"></div>
-                            <h3 class="card-content">Contacts Saved By Event</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit modi ipsum, ex praesentium qui distinctio.</p>
-                        </div>
-                    </li>
-
-                    <!-- Share Info -->
-                    <li>
-                        <div class="features-card">
-                            <img src="./img/share-info.jpg" alt="two phones sharing information">
-                            <div class="card-content"></div>
-                            <h3 class="card-content">Digital Card Exchange</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit modi ipsum, ex praesentium qui distinctio.</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Lower Info -->
-            <section id="lower-info" class="grid">
-                <div class="con-contain">
-                    <h2 class="content-title">Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum consequuntur error voluptas quia ratione nesciunt, voluptatibus ad? Laboriosam, veritatis dolorem!</p>
-                </div>
-            </section>
-
-            <!-- Team/Connect -->
-            <section id="connect-team" class="grid">
-                <!-- Team -->
-                <div class="box">
-                    <h2 class="content-title">Development Team</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consequatur.</p>
-                    <a href="team.html" class="act-button">Who We Are</a>
-                </div>
-
-                <!-- Connect -->
-                <div class="box">
-                    <h2 class="title">Start Networking</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consequatur.</p>
-                    <a href="#" class="act-button">Get Connected</a>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- Footer -->
-        <footer id="footer" class="grid">
-            <div>Copyright 2019 Team Business Cards</div>
-        </footer>
+      </section>
+      
+      <!--  Features  -->
+      <!-- Section B -->
+      <section id="features">
+        <ul> 
+          <!--   Card Creation     -->
+          <div class="card">
+            <li>
+              <img src="img/create-card.jpg" alt="hands holding phone and business card">
+              <h3 class="card-title">Create Personalized Cards</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+            </li>
+          </div>
         
-    </body>
+          <!-- Save Cards -->
+          <div class="card">
+            <li>
+              <img src="img/event-info.jpg" alt="two phones exchanging information">
+              <h3 class="card-title">Saved By Events</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+            </li>
+          </div>
+          
+          <!-- Share Info  -->
+          <div class="card">
+            <li>
+              <img src="img/share-info.jpg" alt="group of people talking">
+              <h3 class="card-title">Digital Card Exchange</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+            </li>
+          </div>
+        
+        </ul>
+      </section>
+      
+        <!--  Lower Info  -->
+        <section id="info">
+            <h2 class="content-title">Lorem ipsum dolor sit ame</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
+        </section>
+      
+        <!--  Team/Connect  -->
+        <section id="team-connect">
+          <div class="lower-wrap">
+            <div class="lower-row">
+              <div class="box"> 
+                  <h2 class="content-title"><a href="team.html" class="act-btn">Production Team</a></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</p>
+              </div>
+              
+              <!-- Connect    -->
+              <div class="box network">
+                <h2 class="content-title"><a href="#" class="act-btn">Start Networking</a></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti, quae facere repudiandae, officiis est exercitationem!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+    <!-- Footer -->
+    <footer>
+      <div>Copyright 2019 Team Business Cards</div>
+    </footer>
+
+  </body>
 </html>
